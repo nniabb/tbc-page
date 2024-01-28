@@ -1,0 +1,74 @@
+@media screen and (min-width:1360px){
+    .bck{
+        width: 100%;
+    }
+    .navbar{
+        padding: 0% 12%;
+    }
+    .intro-section{
+        background-image: url(./assets/bck-2.jpg);
+    }
+    .intro-section-content{
+        padding: 0 12%;
+    }
+    .info-about-program{
+        padding: 4% 12%;
+    }
+    .p-aboutprogram {
+        font-size: 29px;
+        line-height: 38px;
+        letter-spacing: 1px;
+    }
+    .skyblue {
+        font-size: 23px;
+    }
+    .h1 {
+        color: white;
+        font-size: 25px;
+      }
+    .gridside{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 80px;
+        gap: 20px;
+    }
+    .card{
+        width: 320px;
+        border-radius: 5px;
+        border: 1.5px solid gray;
+    }
+    .learning-courses-side {
+        padding: 4% 14% 8% 14%;
+    }
+    .course-name{
+        font-size: 14px;
+    }
+    .registration{
+        font-size: 15px;
+    }
+    .course-details{
+        font-size: 15px;
+    }
+    .course-info{
+        padding: 8% 0% 6% 7%;
+    }
+    .arrow{
+        width: 20px;
+        height: 22px;
+        margin-top: 0;
+    }
+    .arrows{
+        display: flex;
+        padding: 0 80px;
+        bottom: 100%;
+    } 
+     .left-arrow svg,
+     .right-arrow svg{
+        height: 40px;
+    } 
+    .faqs{
+        padding: 6% 18%;
+        gap: 0;
+    }
+}
+

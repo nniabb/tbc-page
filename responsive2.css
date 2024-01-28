@@ -1,0 +1,134 @@
+@media screen and (min-width:800px){
+    .navbar{
+        padding: 1% 6%;
+    }
+    .p-aboutprogram{
+        font-size: 39px;
+        line-height: 50px;
+    }
+    .intro-section{
+        background-image: url(./assets/bck-2.jpg);
+    }
+    .skyblue{
+        font-size: 38px;
+        letter-spacing: 2px;
+    }
+    .info-about-program{
+        gap: 70px;
+    }
+    .h1{
+        font-size: 50px;
+        letter-spacing: 3px;
+    }
+    .card{
+        width: 680px;
+        border-radius: 7px;
+        border: 2px solid gray;
+    }
+    .c-det{
+        margin-top:30px;
+    }
+    .course-name{
+        letter-spacing: 1px;
+        font-size: 35px;
+    }
+    .registration{
+        font-size: 35px;
+    }
+    .course-details{
+        font-size: 35px;
+        margin: 0 15px;
+    }
+    .arrow{
+        width: 33px;
+        height: 30px;
+        margin-top: 2%;
+    }
+    .h2{
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+    .partners {
+        gap: 100px;
+        padding: 5% 9% 23% 9%;
+    }
+    .pagination {
+        bottom: 70px;
+    }
+    .pagination .circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    .faqs{
+        gap: 42px;
+    }
+    .faqsbox{
+        gap: 38px;
+    }
+    .faqs-h1{
+        font-size: 47px;
+        line-height: 70px;
+        width: 430px;
+        letter-spacing: 2px;
+    }
+    .question-p{
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    .faqs-h3{
+        font-size: 39px;
+        letter-spacing: 3px;
+    }
+    .arrow2{
+        width: 26px;
+        height: 26px;
+    }
+    .answer1,
+    .answer2,
+    .answer3,
+    .answer1-3{
+        font-size: 32px;
+    }
+    .answer1-2{
+        font-size: 30px;
+    }
+
+}
+
+/* footer responsive */
+
+@media (max-width: 900px){
+    .footer {
+      background-color: var(--footer-color);
+      padding: 10% 9% 7% 10%;
+      gap: 40px;
+    }
+    .footer-logo {
+      grid-column: 1 / -1;
+    }
+    .footer-button {
+      margin: 0;
+      order: 2;
+    }
+    .socials {
+      order: 3;
+      margin: auto;
+    }
+    .footer-content {
+      order: 4;
+      grid-column: 1 / -1;
+      flex-direction: column-reverse;
+    }
+  }
+
+
+@media only screen and (min-width:720px){
+    .card{
+        width: 550px;
+    }
+    .btn-1{
+        margin-right: 30%;
+    }
+}

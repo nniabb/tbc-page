@@ -1,0 +1,120 @@
+@media screen and (min-width:1000px){
+    #navbar-menu {
+        flex-direction: row;
+        font-size: 15px;
+    }
+    .navbar{
+        padding: 0 8%;
+    }
+    .gridside{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 80px;
+    }
+    .intro-section{
+        background-image: url(./assets/bck-2.jpg);
+    }
+    .p-aboutprogram{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .card{
+        width: 450px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+    .c-det{
+        margin-top:60px;
+    }
+    .course-name{
+        letter-spacing: 1px;
+        font-size: 28px;
+    }
+    .registration{
+        font-size: 25px;
+    }
+    .course-details{
+        font-size: 25px;
+        margin: 0 15px;
+    }
+    .arrow{
+        width: 25px;
+        height: 22px;
+        margin-top: 2%;
+    }
+    .h2{
+        font-size: 28px;
+        margin-left: 10%;
+    }
+    .partners{
+        padding: 2% 7% 5% 7%;
+    }
+    .pagination{
+        bottom: 60px;
+        gap: 5px;
+    }
+    .pagination .circle {
+        width: 8px;
+        height: 8px;
+      }
+    .slide{
+        padding: 0 10%;
+        gap: 100px;
+        margin-bottom: 50px;
+        flex-direction: row;
+    }
+    .ufc{
+        width: 270px;
+    }
+    .faqs-h1{
+        font-size: 25px;
+        letter-spacing: 2px;
+        width: 600px;
+    }
+    .faqs{
+        padding: 6% 8%;
+        gap: 0;
+    }
+    .faqsbox{
+        padding: 3% 0;
+        gap: 12px;
+    }
+    .question-p{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .faqs-h3{
+       display: none;
+    }
+    .arrow2{
+        width: 25px;
+        height: 25px;
+    }
+    .answer1,
+    .answer2,
+    .answer3,
+    .answer1-3{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .answer1-2{
+        font-size: 16px;
+        margin: 5%;
+        line-height: 25px;
+    }
+    .faqs-h3-II{
+        display: block;
+        color: var(--skyblue-color);
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+}
+
+@media screen and (min-width: 950px){
+    #navbar-menu {
+        flex-direction: row;
+        font-size: 15px;
+    }
+}

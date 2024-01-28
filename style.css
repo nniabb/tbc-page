@@ -1,0 +1,560 @@
+*::before,
+*::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-color: rgb(27, 25, 25);
+  --section-color: rgb(43, 43, 43);
+  --paragraphs-color: #f4f4f4;
+  --skyblue-color: #00aef3;
+  --courses-section-color: rgb(22, 22, 22);
+  --footer-color: rgb(29, 34, 36);
+  --navbar-bck-color: #212627;
+  --navbar-color: rgba(34, 34, 34, 0.95);
+}
+
+#section1 {
+  background-color: var(--section-color);
+}
+
+#section2 {
+  background-color: var(--courses-section-color);
+}
+
+#section3 {
+  background-color: var(--section-color);
+}
+
+#section4 {
+  background-color: var(--courses-section-color);
+}
+
+.flex-direction-column,
+.bckg-imgside,
+.card,
+.footer,
+.rules,
+.info-about-program,
+.course-info,
+.partners,
+.slide,
+.faqs,
+.faqsbox,
+.intro-section-content,
+.footer-content  {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.display-flex,
+.navbar-content,
+.bar,
+.slider,
+.contactside,
+.c-det,
+.question,
+.pagination,
+.arrows {
+  display: flex;
+}
+
+.transparent,
+.tbclogo,
+.arrow,
+.c-det,
+ h1,
+.course-details,
+.course-name,
+.registration{
+  background-color: transparent;
+}
+
+.navbar {
+  padding: 1% 7%;
+  background-color: var(--navbar-bck-color);
+  transition: all 0.4s ease 0s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-scrolled {
+  background-color: var(--navbar-color);
+}
+
+.navbar-content {
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0px;
+}
+
+.navbar-logo img {
+  width: 182px;
+  height: 36px;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+#navbar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.headerlogo{
+  width: 200px;
+  height: 20px;
+}
+
+.navbar-link {
+  transition: color .4s ease 0s;
+  text-decoration: none;
+  color: var(--paragraphs-color);
+}
+
+.navbar-link:hover {
+  color: var(--skyblue-color);
+}
+
+.navbar .active {
+  color: var(--skyblue-color);
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--paragraphs-color);
+  border-radius: 8px;
+}
+
+.bar:nth-of-type(1) {
+  width: 50%;
+  margin: 0 auto 0 0;
+}
+
+.bar:nth-of-type(3) {
+  width: 50%;
+  margin: 0 0 0 auto;
+  height: 2px;
+}
+
+.hamburger-active .bar {
+  background-color: rgb(110, 110, 110);
+}
+
+.hamburger-active .bar:nth-of-type(1) {
+  width: 100%;
+  height: 3px;
+  transform: translate(0, 8px) rotate(-45deg);
+}
+
+.hamburger-active .bar:nth-of-type(2) {
+  opacity: 0;
+}
+
+.hamburger-active .bar:nth-of-type(3) {
+  width: 100%;
+  transform: translate(0, -8px) rotate(45deg);
+  height: 3px;
+}
+
+@media only screen and (max-width: 950px) {
+  #navbar-menu {
+      visibility: hidden;
+      opacity: 0;
+      position: fixed;
+      top: 0;
+      width: 50%;
+      right: 0;
+      flex-direction: column;
+      background-color: #222222;
+      border-radius: 10px;
+      text-align: right;
+      transition: all 0.5s ease-in-out;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      height: 100vh;
+      padding: 88px 25px 0 0;
+      right: -100%;
+  }
+
+  #navbar-menu.active {
+      opacity: 1;
+      visibility: visible;
+      right: 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+}
+
+.intro-section {
+  background-image: url(./assets/bck-1.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.intro-section-content {
+  padding: 0 7%;
+  justify-content: center;
+  height: 282px;
+}
+
+.intro-section h3 {
+  font-size: 42px;
+  color: rgb(244, 244, 244);
+}
+
+.intro-section span {
+  font-size: 34px;
+  color: #fff;
+}
+
+.p-aboutprogram {
+  color: var(--paragraphs-color);
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.info-about-program {
+  padding: 10% 6%;
+  gap: 50px;
+}
+
+.skyblue {
+  color: var(--skyblue-color);
+  cursor: pointer;
+}
+
+.h1 {
+  color: white;
+  font-size: 36px;
+}
+
+.gridside{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.learning-courses-side {
+  padding: 5% 7% 8% 7%;
+  justify-content: center;
+  background-color: var(--courses-section-color);
+}
+
+.card {
+  background-color: var(--courses-section-color);
+  width: 360px;
+  justify-self: center;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.course-info {
+  gap: 15px;
+  padding: 9% 5% 10% 5%;
+  background-color: var(--courses-section-color);
+}
+
+.courselogo {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.course-name {
+  font-family: sans-serif;
+  font-size: 21px;
+  color: var(--paragraphs-color);
+}
+
+.registration {
+  font-size: 21px;
+  color: var(--paragraphs-color);
+}
+
+.course-details {
+  cursor: pointer;
+  font-size: 21px;
+  color: var(--skyblue-color);
+}
+
+.partners {
+  gap: 90px;
+  padding: 5% 9% 18% 9%;
+  position: relative;
+}
+
+.h2 {
+  font-size: 25px;
+  color: white;
+}
+
+.slider-container {
+  max-width: 1440px;
+  z-index: 9;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  padding: 0 7%;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.pagination {
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.pagination .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.arrows {
+  width: 100%;
+  display: none;
+  min-width: 1000px;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-arrow svg,
+.right-arrow svg {
+  fill: white;
+  stroke-width: 1px;
+  height: 50px;
+  &:hover {
+    fill: rgb(155, 154, 154);
+    cursor: pointer;
+  }
+}
+
+.right-arrow svg {
+  transform: rotate(180deg);
+}
+
+.slider {
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.img {
+  width: 90%;
+  height: auto;
+}
+
+.spcnt {
+  width: 70%;
+}
+
+.tnt {
+  width: 90%;
+}
+
+.tgt {
+  width: 80%;
+}
+
+.spctr {
+  width: 55%;
+}
+
+.faqs {
+  gap: 30px;
+  padding: 13% 7% 15% 7%;
+}
+
+.faqsbox {
+  border-bottom: 1px solid gray;
+  padding: 7% 0;
+  gap: 20px;
+}
+
+.arrow2 {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.question {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-p {
+  color: var(--paragraphs-color);
+  font-size: 24px;
+}
+
+.faqs-h1 {
+  color: var(--paragraphs-color);
+  font-size: 30px;
+}
+
+.faqs-h3-II{
+  display: none;
+}
+
+.faqs-h3 {
+  margin-top: 40px;
+  align-self: center;
+  color: var(--skyblue-color);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+}
+
+.faqsbox.active .answer {
+  display: block;
+}
+
+.faqsbox.active .arrow2 {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.answer1,
+.answer2,
+.answer3 {
+  color: var(--paragraphs-color);
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.answer1-2 {
+  color: var(--paragraphs-color);
+  margin: 12% 5%;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.answer1-3 {
+  color: var(--paragraphs-color);
+  font-size: 19px;
+  line-height: 40px;
+  margin: 0 1%;
+}
+
+.footer {
+  background-color: var(--footer-color);
+  padding: 4% 9% 3% 13%;
+  gap: 40px;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+}
+
+.socials {
+  display: flex;
+  justify-self: end;
+  gap: 10px;
+}
+
+.socials img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.ftrlogo {
+  width: 120px;
+  height: 33px;
+}
+
+.footer-content {
+  gap: 16px;
+}
+
+.footer-content p {
+  font-size: 20px;
+  color: var(--paragraphs-color);
+  font-family: "tbc-font";
+}
+
+.footer-content a {
+  font-size: 20px;
+  color: var(--paragraphs-color);
+  font-family: "tbc-font";
+  text-decoration: none;
+}
+
+.footer-contact {
+  display: flex;
+  align-self: flex-end;
+}
+
+.footer-button{
+  width: 160px;
+  height: 42px;
+  background-color: var(--skyblue-color);
+  border-radius: 7px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  color: var(--paragraphs-color);
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.footer-button:hover{
+  background-color: rgb(168, 160, 160);
+  color: rgb(53, 51, 51);
+  transition: .4s;
+}
+
+
